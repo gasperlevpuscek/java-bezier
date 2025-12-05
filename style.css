@@ -1,13 +1,30 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-svg{
-    height: 300px;
-    width: auto;
-    
+body {
+    background-color: #ffdac186;
 }
-path{
-    fill: red;
+
+.svg-container {
+    height: 400px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    position: absolute;
+}
+
+.java-cup {
+    height: 100%;
+    width: auto;
+    fill: #b2dcff;
+}
+
+.java-text {
+    height: 100%;
+    width: auto;
+    fill: #ffbbbb;
 }
