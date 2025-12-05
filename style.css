@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+svg{
+    height: 300px;
+    width: auto;
+    
+}
+path{
+    fill: red;
+}
