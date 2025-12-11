@@ -4,8 +4,7 @@
 }
 
 html,
-body {
-}
+body {}
 
 body {
     background-color: #ffdac186;
@@ -74,7 +73,9 @@ img {
 }
 
 
-canvas {
+.java-canvas {
     border: 1px solid #555;
-    background: #ffefc1;
+    background-color: wheat;
+    width: 295px;
+    height: 400px;
 }
