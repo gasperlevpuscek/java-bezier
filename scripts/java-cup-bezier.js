@@ -1,22 +1,21 @@
-window.onload = function () {
+window.addEventListener("load", function () {
     const canvas = document.getElementById("java-canvas-id");
     const ctx = canvas.getContext("2d");
-    const dpr = window.devicePixelRatio || 1000;
 
-    // save css size
-    const cssWidth = canvas.width;
-    const cssHeight = canvas.height;
+    const dpr = window.devicePixelRatio || 1;
 
-    // increase actual size
+    const cssWidth = parseInt(getComputedStyle(canvas).width, 10);
+    const cssHeight = parseInt(getComputedStyle(canvas).height, 10);
+
     canvas.width = cssWidth * dpr;
     canvas.height = cssHeight * dpr;
 
-    // scale context bacl
-    ctx.scale(dpr, dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
 
     ctx.fillStyle = "#3c74ff";
     ctx.strokeStyle = "#000";
-    ctx.lineWidth = 1;
+    ctx.lineWidth = 2;
 
     ctx.beginPath();
 
@@ -118,4 +117,4 @@ window.onload = function () {
 
     ctx.stroke();
     ctx.fill();
-};
+});

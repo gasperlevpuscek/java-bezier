@@ -76,6 +76,10 @@ img {
 .java-canvas {
     border: 1px solid #555;
     background-color: wheat;
+}
+
+canvas {
     width: 295px;
     height: 400px;
+    display: block;
 }
