@@ -1,10 +1,11 @@
 window.addEventListener("load", function () {
-    const canvas = document.getElementById("java-canvas-id");
+    const canvas = document.getElementById("bezierCanvas");
     const ctx = canvas.getContext("2d");
 
     ctx.fillStyle = "#ff8623ff";
     ctx.strokeStyle = "#000000";
     ctx.lineWidth = 1;
+    ctx.beginPath();
 
     // left
     ctx.moveTo(189, 7);
@@ -37,5 +38,7 @@ window.addEventListener("load", function () {
     ctx.closePath();
 
     ctx.stroke();
+    ctx.closePath();
     ctx.fill();
+
 });

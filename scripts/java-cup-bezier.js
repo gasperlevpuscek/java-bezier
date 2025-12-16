@@ -1,7 +1,8 @@
 window.addEventListener("load", function () {
-    const canvas = document.getElementById("java-canvas-id");
+    const canvas = document.getElementById("bezierCanvas");
     const ctx = canvas.getContext("2d");
 
+    /*
     const dpr = window.devicePixelRatio || 1;
 
     const cssWidth = parseInt(getComputedStyle(canvas).width, 10);
@@ -11,11 +12,13 @@ window.addEventListener("load", function () {
     canvas.height = cssHeight * dpr;
 
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-
+    */
+    canvas.width = 295;
+    canvas.height = 400;
 
     ctx.fillStyle = "#3c74ff";
     ctx.strokeStyle = "#000";
-    ctx.lineWidth = 2;
+    ctx.lineWidth = 1;
 
     ctx.beginPath();
 
@@ -116,5 +119,7 @@ window.addEventListener("load", function () {
     ctx.closePath();
 
     ctx.stroke();
+    ctx.closePath();
     ctx.fill();
+
 });

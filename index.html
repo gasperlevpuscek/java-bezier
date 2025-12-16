@@ -3,18 +3,17 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Java SVG Example</title>
-  <link rel="stylesheet" href="styles/style.css">
+  <title>Java</title>
+  <link rel="stylesheet" href="styles/style2.css">
 </head>
 
 <body>
+  <div class="root">
+    <div class="top-div">
 
-
-  <div class="upper-div">
-
-    <div class="svg-container">
-      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="1150 300 700 1100">
-        <path class="java-smoke" id="Selection" fill="none" stroke="black" stroke-width="1" d="M 1590.00,333.00
+      <div class="svg-container">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="1150 300 700 1100">
+          <path class="java-smoke" id="Selection" d="M 1590.00,333.00
            C 1597.98,339.23 1604.57,352.53 1608.05,362.00
              1618.87,391.52 1616.42,421.02 1605.19,450.00
              1588.07,494.19 1551.66,532.46 1516.00,562.58
@@ -51,7 +50,7 @@
              1604.39,806.82 1582.20,830.63 1557.00,850.21
              1557.00,850.21 1539.00,862.58 1539.00,862.58
              1535.67,864.64 1532.98,866.95 1529.00,866.00 Z" />
-        <path class="java-cup" id="Selection #1" fill="none" stroke="black" stroke-width="1" d="M 1710.00,846.00
+          <path class="java-cup" id="Selection #1" d="M 1710.00,846.00
            C 1716.41,834.10 1730.65,830.96 1743.00,828.92
              1743.00,828.92 1762.00,827.18 1762.00,827.18
              1787.17,828.97 1812.53,837.27 1826.53,860.00
@@ -198,21 +197,26 @@
              1615.95,1226.36 1655.54,1221.54 1695.00,1214.42
              1727.10,1208.63 1762.75,1200.34 1793.00,1188.20
              1807.54,1182.36 1825.44,1173.62 1835.00,1161.00 Z" />
-      </svg>
-    </div>
-    <div class="java-title">Java<sup>TM</sub></div>
-  </div>
+        </svg>
+      </div>
 
-  <div class="root">
-    <canvas id="java-canvas-id" class="java-canvas" width="295px" height="400px"></canvas>
-  </div>
-  <div class="bottom-div">
-    <div class="java-img-div">
-      <img src="javaLogo.png" alt="java-logo">
+
+    </div>
+    <div class="main-div">
+      <div class="canvas-container">
+        <canvas id="bezierCanvas"></canvas>
+      </div>
+    </div>
+
+
+    <div class="bottom-div">
+      <div class="java-png-container">
+        <img src="images/javaLogo.png" alt="Java programming language logo" class="java-logo-png">
+      </div>
     </div>
   </div>
-
 </body>
+
 <script src="scripts/java-cup-bezier.js"></script>
 <script src="scripts/java-smoke-bezier.js"></script>
 
