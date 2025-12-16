@@ -22,19 +22,19 @@ window.addEventListener("load", function () {
     ctx.closePath();
 
     // right
-    ctx.moveTo(229, 85);
-    ctx.bezierCurveTo(229, 85, 230, 86, 230, 86);
+    ctx.moveTo(230, 85);
+    ctx.bezierCurveTo(230, 85, 230, 86, 230, 86);
     ctx.bezierCurveTo(215, 95, 195, 108, 183, 120);
-    ctx.bezierCurveTo(176, 127, 171, 135, 171, 145);
+    ctx.bezierCurveTo(176, 129, 171, 135, 171, 145);
     ctx.bezierCurveTo(172, 164, 196, 176, 192, 197);
-    ctx.bezierCurveTo(191, 200, 190, 203, 189, 206);
-    ctx.bezierCurveTo(186, 210, 183, 214, 180, 217);
+    ctx.bezierCurveTo(191, 200, 191, 203, 189, 206);
+    ctx.bezierCurveTo(187, 210, 183, 214, 180, 217);
     ctx.bezierCurveTo(176, 221, 172, 224, 167, 227);
     ctx.bezierCurveTo(170, 220, 173, 217, 174, 209);
     ctx.bezierCurveTo(175, 197, 166, 190, 160, 181);
     ctx.bezierCurveTo(153, 170, 150, 163, 150, 150);
     ctx.bezierCurveTo(150, 136, 157, 126, 167, 117);
-    ctx.bezierCurveTo(184, 101, 207, 93, 229, 85);
+    ctx.bezierCurveTo(184, 101, 207, 90, 230, 85);
     ctx.closePath();
 
     ctx.stroke();

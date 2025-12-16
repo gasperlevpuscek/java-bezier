@@ -54,12 +54,11 @@ MAIN
 }
 
 #bezierCanvas {
-    max-width: 100%;
-    height: auto;
+    height: 400px;
+    width: 295px;
     display: block;
     background-color: silver;
 }
-
 
 
 /* 
