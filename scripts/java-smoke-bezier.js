@@ -4,7 +4,7 @@ window.addEventListener("load", function () {
 
     ctx.fillStyle = "#ff8623ff";
     ctx.strokeStyle = "#000000";
-    ctx.lineWidth = 1;
+    ctx.lineWidth = 0;
     ctx.beginPath();
 
     // left
