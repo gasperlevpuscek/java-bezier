@@ -3,18 +3,21 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .root {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-
 /* 
 TOP 
 */
 .top-div {
-    background-color: rgb(74, 69, 162);
+    background-color: #3a75b0;
     height: 90px;
     display: flex;
 }
@@ -22,7 +25,7 @@ TOP
 .svg-container {
     height: 80%;
     width: 80px;
-    padding: 10px
+    padding: 10px;
 }
 
 .svg-container svg {
@@ -40,7 +43,6 @@ TOP
 
 }
 
-
 .java-tm-div {
     color: white;
     font-family: sans-serif;
@@ -54,27 +56,39 @@ TOP
     font-size: 6px;
 }
 
-
 /* 
 MAIN 
 */
+
 .main-div {
-    background-color: rgb(254, 255, 224);
-    flex: 1;
     display: flex;
+    flex: 1;
 }
 
-.canvas-container {
+.main-mid-div {
+    display: flex;
     width: 100%;
-    overflow: hidden;
-}
-
-#bezierCanvas {
     height: 400px;
-    width: 295px;
-    display: block;
+    background-color: #285d93;
+    justify-content: center;
 }
 
+.java-content {
+    display: flex;
+    height: 100%;
+    width: 600px;
+}
+
+.java-text {
+    flex: 1;
+    flex-direction: column;
+}
+
+.java-canvas {
+    width: 295px;
+    height: 100%;
+    flex-shrink: 0;
+}
 
 /* 
 BOTTOM 

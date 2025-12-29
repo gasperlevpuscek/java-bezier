@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
     canvas.width = 295;
     canvas.height = 400;
 
-    ctx.fillStyle = "#3974ffff";
+    ctx.fillStyle = "white";
 
     ctx.beginPath();
 
