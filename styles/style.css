@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
 }
 
 .root {
@@ -62,26 +63,37 @@ MAIN
 
 .main-div {
     display: flex;
+    flex-direction: column;
     flex: 1;
 }
 
+
+/* MAIN UPPER DIV */
 .main-mid-div {
     display: flex;
     width: 100%;
     height: 400px;
-    background-color: #285d93;
+    background-color: #2c5581;
     justify-content: center;
 }
 
 .java-content {
     display: flex;
     height: 100%;
-    width: 600px;
+    width: 800px;
+    gap: 20px;
 }
 
 .java-text {
     flex: 1;
-    flex-direction: column;
+    align-content: center;
+    color: white;
+}
+
+
+h1 {
+    border-bottom: 3px solid #ff9412;
+    padding-bottom: 4px;
 }
 
 .java-canvas {
@@ -90,14 +102,133 @@ MAIN
     flex-shrink: 0;
 }
 
+
+.main-content-div {
+    flex: 1;
+    width: 100%;
+}
+
+.java-content-div {
+    display: flex;
+    height: 500px;
+    width: 800px;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+/* MAIN LOWER/MIDDLE DIV */
+.java-box {
+    display: flex;
+    gap: 24px;
+}
+
+.java-inner-box {
+    flex: 1;
+    background: #fff;
+    border: 1px solid lightgray;
+    padding: 28px;
+    font-family: system-ui, sans-serif;
+}
+
+.java-inner-box h2 {
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.java-inner-box p {
+    margin: 0 0 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.java-inner-box button {
+    margin-bottom: 16px;
+    padding: 10px 18px;
+    background: #00688b;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.java-inner-box a {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #00688b;
+    text-decoration: none;
+}
+
+.java-inner-box a:hover {
+    text-decoration: underline;
+}
+
+
+
 /* 
 BOTTOM 
 */
 .bottom-div {
-    background-color: rgb(44, 44, 44);
-    height: 180px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgb(50, 50, 50), rgb(19, 19, 19));
+    padding-top: 20px;
+
+}
+
+.footer-content {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 60px 30px;
+}
+
+.footer-column {
+    margin-right: 0;
+    min-width: 180px;
+}
+
+
+.footer-heading {
+    color: rgb(230, 230, 230);
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+
+.footer-item {
+    color: rgb(160, 160, 160);
+    font-size: 13px;
+    margin-bottom: 8px;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-item:hover {
+    color: #ff9412;
+    transform: translateX(4px);
+    cursor: pointer;
+}
+
+.footer-bottom {
     display: flex;
     align-items: center;
+    border-top: 1px solid rgb(70, 70, 70);
+    padding: 14px 60px;
+}
+
+.footer-meta {
+    color: rgb(140, 140, 140);
+    font-size: 12px;
 }
 
 .java-png-container {
@@ -105,7 +236,6 @@ BOTTOM
 }
 
 .java-logo-png {
-    width: 100px;
+    width: 88px;
     height: auto;
-    margin: 20px;
 }

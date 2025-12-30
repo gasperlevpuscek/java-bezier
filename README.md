@@ -1,37 +1,75 @@
+# Java Bezier
 
-## Project Structure
+An interactive frontend project exploring different ways of displaying images and rendering Bezier curves using JavaScript.
 
-```
+## Overview
+
+Java Bezier is a project focused on experimenting with **Bezier curves** and exploring different image-rendering techniques on the web. It demonstrates implementations using SVG paths, the HTML Canvas API, and standard image elements.
+
+## Features
+
+- SVG Bezier curves (SVG path data)
+- Canvas Bezier curves (HTML Canvas API)
+- Standard image rendering with `<img>`
+- JavaScript interaction for generating/displaying curves
+- Simple, clean UI inspired by the Java platform design
+
+## Project structure
+
+```text
 java-bezier/
-├── index.html              # Main HTML file with SVG and canvas elements
+├── images/
+│   └── javaLogo.png
 ├── scripts/
-│   ├── java-cup-bezier.js  # Canvas bezier curves for the coffee cup
-│   └── java-smoke-bezier.js # Canvas bezier curves for smoke
+│   ├── about.js
+│   ├── java-cup-bezier.js
+│   └── java-smoke-bezier.js
 ├── styles/
-│   └── style.css           # Styling and layout
+│   └── style.css
 ├── svg-code/
-│   ├── img-layer-1.svg     # SVG layer 1
-│   └── img-layer-2.svg     # SVG layer 2
-├── javaLogo.png            # Java logo image
-└── README.md               # This file
+│   ├── java-cup-path.svg
+│   └── java-smoke-path.svg
+├── index.html
+├── LICENSE
+└── README.md
 ```
 
-## How It Works
+## Pictures
 
-- **HTML**: Embeds SVG graphics directly in the DOM and provides a canvas element for bezier curve animations
-- **CSS**: Handles styling, layout, and basic responsive design with flexbox
-- **JavaScript**: Uses the HTML5 Canvas API with `bezierCurveTo()` to draw smooth curves for the cup and animated steam effects
+Screenshots and demos will be added here eventually. 
 
-## Technologies Used
+## Rendering methods
+
+### SVG
+Bezier curves defined with SVG path elements. Scalable and precise.
+
+### Canvas
+Programmatic drawing with the HTML Canvas API for dynamic rendering.
+
+### Standard images
+PNG images displayed with `<img>` for raster comparison.
+
+## Getting started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/gasperlevpuscek/java-bezier.git
+   cd java-bezier
+   ```
+2. Open `index.html` in your browser or serve the directory with a static server.
+
+## Technologies used
 
 - HTML5
 - CSS3
-- JavaScript (Canvas API)
+- JavaScript
 - SVG
+- HTML Canvas
+- SweetAlert2 
 
-## Notes
+## Disclaimer
 
-This project is created purely as a practice exercise and does not represent a production-ready application. It serves as a learning resource for understanding bezier curves and canvas-based graphics rendering.
+This project is an independent school project and is not affiliated with, endorsed by, or sponsored by Oracle or the Java platform.
 
 ## Author
 
@@ -39,4 +77,5 @@ Gašper Levpušček
 
 ## License
 
-See [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the LICENSE file for details.
+
