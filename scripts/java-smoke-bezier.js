@@ -1,8 +1,8 @@
-window.addEventListener("load", () => {
+window.addEventListener("load", function () {
     const canvas = document.getElementById("bezierCanvas");
     const ctx = canvas.getContext("2d");
 
-    ctx.fillStyle = "#e7a50cff";
+    ctx.fillStyle = "#ff9819";
 
     ctx.beginPath();
 
@@ -21,4 +21,5 @@ window.addEventListener("load", () => {
     ctx.closePath();
 
     ctx.fill();
+    ctx.closePath();
 });

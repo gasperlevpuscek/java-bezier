@@ -41,7 +41,7 @@ Screenshots and demos will be added here eventually.
 ## Rendering methods
 
 ### SVG
-Bezier curves defined with SVG path elements. Scalable and precise.
+Curves defined with SVG path elements. Scalable and precise.
 
 ### Canvas
 Programmatic drawing with the HTML Canvas API for dynamic rendering.
@@ -69,7 +69,7 @@ PNG images displayed with `<img>` for raster comparison.
 
 ## Disclaimer
 
-This project is an independent school project and is not affiliated with, endorsed by, or sponsored by Oracle or the Java platform.
+This project is an independent project and is not affiliated with, endorsed by, or sponsored by Oracle or the Java platform.
 
 ## Author
 

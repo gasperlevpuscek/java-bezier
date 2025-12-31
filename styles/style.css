@@ -18,8 +18,8 @@ body {
 TOP 
 */
 .top-div {
-    background-color: #3a75b0;
-    height: 90px;
+    background: #193a65;
+    height: 120px;
     display: flex;
 }
 
@@ -40,47 +40,68 @@ TOP
 }
 
 .java-smoke {
-    fill: rgb(239, 140, 0);
-
+    fill: #ff9819;
 }
 
 .java-tm-div {
     color: white;
     font-family: sans-serif;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: bold;
     align-self: center;
     margin-left: -20px;
 }
 
 .java-tm-div sup {
-    font-size: 6px;
+    font-size: 8px;
+}
+
+.search-container {
+    margin-left: auto;
+    margin-right: 30px;
+    align-self: center;
+}
+
+.search-container input {
+    background: #0f2a4d;
+    border: 1px solid #2a4f7a;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    width: 260px;
+    height: 22px;
+    font-size: 16px;
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: #b0c4de;
 }
 
 /* 
 MAIN 
 */
-
 .main-div {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 
-
-/* MAIN UPPER DIV */
+/* 
+MAIN UPPER DIV 
+*/
 .main-mid-div {
     display: flex;
     width: 100%;
-    height: 400px;
-    background-color: #2c5581;
+    height: 500px;
+    background-image: linear-gradient(to bottom, #0c1f32, #0e2b55);
     justify-content: center;
 }
 
 .java-content {
     display: flex;
     height: 100%;
-    width: 800px;
+    width: 850px;
     gap: 20px;
 }
 
@@ -90,39 +111,52 @@ MAIN
     color: white;
 }
 
+#java-about {
+    font-size: 19px;
+}
 
 h1 {
-    border-bottom: 3px solid #ff9412;
+    font-size: 42px;
     padding-bottom: 4px;
 }
 
+h1::after {
+    content: "";
+    display: block;
+    width: 85px;
+    height: 4px;
+    background-color: #ff9819;
+    margin-top: 6px;
+}
+
 .java-canvas {
+    padding-top: 30px;
     width: 295px;
     height: 100%;
     flex-shrink: 0;
 }
 
-
+/* 
+MAIN LOWER/MIDDLE DIV 
+*/
 .main-content-div {
     flex: 1;
     width: 100%;
+    background-color: #e1e2e3;
 }
 
 .java-content-div {
     display: flex;
     height: 500px;
-    width: 800px;
+    width: 900px;
     margin: auto;
     align-items: center;
     align-content: center;
 }
 
-
-
-/* MAIN LOWER/MIDDLE DIV */
 .java-box {
     display: flex;
-    gap: 24px;
+    gap: 30px;
 }
 
 .java-inner-box {
@@ -135,33 +169,38 @@ h1 {
 
 .java-inner-box h2 {
     margin-bottom: 8px;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 600;
-
 }
 
 .java-inner-box p {
     margin: 0 0 20px;
-    font-size: 14px;
+    font-size: 18px;
     color: #555;
 }
 
 .java-inner-box button {
     margin-bottom: 16px;
     padding: 10px 18px;
-    background: #00688b;
+    background: #153763;
     color: #fff;
     border: 0;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+}
+
+.java-inner-box button:hover {
+    background: #0e2b55;
+    scale: 1.02;
+    transition: 150ms;
 }
 
 .java-inner-box a {
     display: block;
     margin-bottom: 6px;
-    font-size: 14px;
+    font-size: 16px;
     color: #00688b;
     text-decoration: none;
 }
@@ -169,8 +208,6 @@ h1 {
 .java-inner-box a:hover {
     text-decoration: underline;
 }
-
-
 
 /* 
 BOTTOM 
@@ -180,7 +217,6 @@ BOTTOM
     flex-direction: column;
     background: linear-gradient(to bottom, rgb(50, 50, 50), rgb(19, 19, 19));
     padding-top: 20px;
-
 }
 
 .footer-content {
@@ -195,26 +231,24 @@ BOTTOM
     min-width: 180px;
 }
 
-
 .footer-heading {
     color: rgb(230, 230, 230);
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.5px;
     margin-bottom: 16px;
     text-transform: uppercase;
 }
 
-
 .footer-item {
-    color: rgb(160, 160, 160);
-    font-size: 13px;
+    color: rgb(176, 175, 175);
+    font-size: 16px;
     margin-bottom: 8px;
     transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .footer-item:hover {
-    color: #ff9412;
+    color: #ff9819;
     transform: translateX(4px);
     cursor: pointer;
 }
@@ -226,9 +260,9 @@ BOTTOM
     padding: 14px 60px;
 }
 
-.footer-meta {
+.footer-copyright {
     color: rgb(140, 140, 140);
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .java-png-container {
@@ -236,6 +270,6 @@ BOTTOM
 }
 
 .java-logo-png {
-    width: 88px;
+    width: 108px;
     height: auto;
 }

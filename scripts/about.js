@@ -1,11 +1,11 @@
 addEventListener("DOMContentLoaded", function () {
-    const aboutElements = document.querySelectorAll('#aboutJs');
+  const aboutElements = document.querySelectorAll('#aboutJs');
 
-    aboutElements.forEach(function (element) {
-        element.addEventListener('click', function () {
-            Swal.fire({
-                title: 'Java Bezier',
-                html: `
+  aboutElements.forEach(function (element) {
+    element.addEventListener('click', function () {
+      Swal.fire({
+        title: 'Java Bezier',
+        html: `
     <p style="margin-bottom: 16px;">
       This website showcases three different ways of displaying images:
       <strong>SVG</strong>, <strong>Canvas</strong>, and <strong>standard images</strong>.
@@ -20,12 +20,13 @@ addEventListener("DOMContentLoaded", function () {
       License: MIT License
     </p>
   `,
-                imageUrl: 'images/javaLogo.png',
-                imageWidth: 80,
-                imageHeight: 108,
-                imageAlt: 'Java logo',
-                confirmButtonText: 'Close'
-            });
-        });
+        imageUrl: 'images/javaLogo.png',
+        imageWidth: 80,
+        imageHeight: 108,
+        imageAlt: 'Java logo',
+        confirmButtonText: 'Close',
+        confirmButtonColor: '#153763'
+      });
     });
+  });
 });

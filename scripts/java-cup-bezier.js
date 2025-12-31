@@ -1,9 +1,6 @@
-window.addEventListener("load", () => {
+window.addEventListener("load", function () {
     const canvas = document.getElementById("bezierCanvas");
     const ctx = canvas.getContext("2d");
-
-    canvas.width = 295;
-    canvas.height = 400;
 
     ctx.fillStyle = "white";
 
@@ -50,6 +47,7 @@ window.addEventListener("load", () => {
     ctx.moveTo(238, 225);
     ctx.bezierCurveTo(278, 213, 298, 261, 229, 295);
     ctx.bezierCurveTo(339, 264, 276, 198, 238, 225);
+
     ctx.closePath();
     ctx.fill();
 });
