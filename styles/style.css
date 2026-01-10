@@ -15,24 +15,31 @@ body {
 }
 
 /* 
-TOP 
+ TOP DIV 
 */
 .top-div {
-    background: #193a65;
-    height: 120px;
+    background: #3f78b5;
+    height: 102px;
     display: flex;
+    align-items: center;
+    padding: 0 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
 }
 
 .svg-container {
-    height: 80%;
-    width: 80px;
-    padding: 10px;
+    width: auto;
+    height: 80px;
 }
 
 .svg-container svg {
     width: 100%;
     height: 100%;
-    display: block;
 }
 
 .java-cup {
@@ -40,42 +47,55 @@ TOP
 }
 
 .java-smoke {
-    fill: #ff9819;
+    fill: #ff9f1c;
 }
 
 .java-tm-div {
     color: white;
-    font-family: sans-serif;
-    font-size: 36px;
-    font-weight: bold;
-    align-self: center;
-    margin-left: -20px;
+    font-size: 32px;
+    font-weight: 600;
 }
 
 .java-tm-div sup {
-    font-size: 8px;
+    font-size: 9px;
+    vertical-align: top;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 6px 0;
+    position: relative;
+}
+
+.nav-links a:hover {
+   color: #ff9819;
+   transition: 0.2s;
 }
 
 .search-container {
     margin-left: auto;
-    margin-right: 30px;
-    align-self: center;
 }
 
 .search-container input {
-    background: #0f2a4d;
-    border: 1px solid #2a4f7a;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 4px;
-    width: 260px;
-    height: 22px;
-    font-size: 16px;
+    width: 220px;
+    height: 30px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid #c7c7c7;
 }
 
 .search-container input:focus {
     outline: none;
-    border-color: #b0c4de;
+    border-color: #8fb3e8;
 }
 
 /* 
@@ -93,8 +113,8 @@ MAIN UPPER DIV
 .main-mid-div {
     display: flex;
     width: 100%;
-    height: 500px;
-    background-image: linear-gradient(to bottom, #0c1f32, #0e2b55);
+    height: 450px;
+    background-image: linear-gradient(to bottom, #04536f, rgb(15, 44, 88));
     justify-content: center;
 }
 
@@ -130,7 +150,7 @@ h1::after {
 }
 
 .java-canvas {
-    padding-top: 30px;
+    padding-top: 20px;
     width: 295px;
     height: 100%;
     flex-shrink: 0;
@@ -215,61 +235,69 @@ BOTTOM
 .bottom-div {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to bottom, rgb(50, 50, 50), rgb(19, 19, 19));
-    padding-top: 20px;
+    background: linear-gradient(to bottom, #ffffff 0%, #f2f2f2 100%);
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer-content {
     display: flex;
-    max-width: 1100px;
+    justify-content: space-between;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 50px 60px 30px;
+    padding: 40px 60px 50px;
+    gap: 60px;
 }
 
 .footer-column {
-    margin-right: 0;
     min-width: 180px;
 }
 
 .footer-heading {
-    color: rgb(230, 230, 230);
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    margin-bottom: 16px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    margin-bottom: 18px;
     text-transform: uppercase;
 }
 
+
 .footer-item {
-    color: rgb(176, 175, 175);
-    font-size: 16px;
-    margin-bottom: 8px;
-    transition: color 0.2s ease, transform 0.2s ease;
+    color: #2c2c2c;
+    font-size: 15px;
+    margin-bottom: 10px;
+    transition: color 0.2s ease;
 }
 
 .footer-item:hover {
-    color: #ff9819;
-    transform: translateX(4px);
+    color: #0074d9; 
     cursor: pointer;
+    transform: none; 
 }
 
 .footer-bottom {
     display: flex;
+    width: 100%;
     align-items: center;
-    border-top: 1px solid rgb(70, 70, 70);
-    padding: 14px 60px;
+    margin: 0 auto;
+    width: 100%;
+    border-top: 1px solid #d9d9d9;
+    padding: 18px 60px;
 }
 
 .footer-copyright {
-    color: rgb(140, 140, 140);
-    font-size: 14px;
+    color: #616161;
+    font-size: 13px;
 }
 
 .java-png-container {
+    position: inherit;
+    margin-right: 90px;
     margin-left: auto;
 }
 
 .java-logo-png {
-    width: 108px;
+    width: 90px;
     height: auto;
 }

@@ -2,6 +2,21 @@ window.addEventListener("load", function () {
     const canvas = document.getElementById("bezierCanvas");
     const ctx = canvas.getContext("2d");
 
+    const dpr = window.devicePixelRatio || 1;
+
+    const cssWidth = 295;
+    const cssHeight = 400;
+
+    canvas.style.width = cssWidth + "px";
+    canvas.style.height = cssHeight + "px";
+
+    canvas.width = cssWidth * dpr;
+    canvas.height = cssHeight * dpr;
+
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    // ----
+
     ctx.fillStyle = "white";
 
     ctx.beginPath();
