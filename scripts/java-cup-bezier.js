@@ -21,12 +21,14 @@ window.addEventListener("load", function () {
 
     ctx.beginPath();
 
+    // Cup base
     ctx.moveTo(56, 387);
     ctx.bezierCurveTo(56, 387, 228, 408, 291, 362);
     ctx.bezierCurveTo(288, 396, 185, 398, 152, 398);
     ctx.bezierCurveTo(65, 398, 56, 387, 56, 387);
     ctx.closePath();
 
+    // Lower cup body
     ctx.moveTo(63, 340);
     ctx.bezierCurveTo(63, 340, 41, 335, 12, 350);
     ctx.bezierCurveTo(-10, 365, 13, 369, 19, 370);
@@ -37,6 +39,7 @@ window.addEventListener("load", function () {
     ctx.bezierCurveTo(18, 348, 63, 340, 63, 340);
     ctx.closePath();
 
+    // Middle cup curve
     ctx.moveTo(93, 311);
     ctx.bezierCurveTo(91, 311, 77, 314, 76, 322);
     ctx.bezierCurveTo(76, 339, 154, 354, 208, 328);
@@ -44,6 +47,7 @@ window.addEventListener("load", function () {
     ctx.bezierCurveTo(166, 325, 74, 328, 93, 311);
     ctx.closePath();
 
+    // Upper cup curve
     ctx.moveTo(85, 268);
     ctx.bezierCurveTo(85, 268, 65, 273, 65, 281);
     ctx.bezierCurveTo(65, 300, 161, 305, 213, 286);
@@ -52,6 +56,7 @@ window.addEventListener("load", function () {
     ctx.bezierCurveTo(79, 273, 85, 268, 85, 268);
     ctx.closePath();
 
+    // Cup top curve 
     ctx.moveTo(99, 223);
     ctx.bezierCurveTo(75, 222, -20, 247, 74, 255);
     ctx.bezierCurveTo(134, 261, 186, 252, 213, 246);
@@ -59,6 +64,7 @@ window.addEventListener("load", function () {
     ctx.bezierCurveTo(179, 250, -21, 256, 99, 223);
     ctx.closePath();
 
+    // Cup handle
     ctx.moveTo(238, 225);
     ctx.bezierCurveTo(278, 213, 298, 261, 229, 295);
     ctx.bezierCurveTo(339, 264, 276, 198, 238, 225);

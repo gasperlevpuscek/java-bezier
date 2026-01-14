@@ -6,6 +6,7 @@ window.addEventListener("load", function () {
 
     ctx.beginPath();
 
+    // Left smoke curve
     ctx.moveTo(148, 222);
     ctx.bezierCurveTo(90, 167, 69, 144, 145, 89);
     ctx.bezierCurveTo(174, 65, 193, 53, 187, 7);
@@ -13,6 +14,7 @@ window.addEventListener("load", function () {
     ctx.bezierCurveTo(97, 155, 118, 177, 148, 222);
     ctx.closePath();
 
+    // Right smoke curve
     ctx.moveTo(162, 235);
     ctx.bezierCurveTo(193, 194, 145, 198, 148, 150);
     ctx.bezierCurveTo(150, 125, 184, 102, 233, 87);
