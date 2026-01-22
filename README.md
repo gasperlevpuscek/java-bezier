@@ -1,4 +1,4 @@
-# Java Bezier
+<h1 align="center">Java Bezier</h1>
 
 An interactive frontend project exploring different ways of displaying images and rendering Bezier curves using JavaScript.
 
@@ -37,21 +37,21 @@ java-bezier/
 ## Rendering methods
 
 ### SVG
-Curves defined with SVG path elements. Scalable and precise.
-<p align="center">
-<img width="810" height="407" alt="java_svg_image" src="https://github.com/user-attachments/assets/5728ee42-5829-4934-a0af-91c4df3d2a98" />
+Curves drawn with SVG paths - scales perfectly without losing quality.
+<p align="left">
+<img width="250" height="126" alt="java_svg_image" src="https://github.com/user-attachments/assets/5728ee42-5829-4934-a0af-91c4df3d2a98" />
 </p>
 
 ### Canvas
 Programmatic drawing with the HTML Canvas API for dynamic rendering.
-<p align="center">
-<img width="518" height="642" alt="java_canvas_image" src="https://github.com/user-attachments/assets/df1c711e-d080-4004-9c9b-81498093ce9c" />
+<p align="left">
+<img width="200" height="248" alt="java_canvas_image" src="https://github.com/user-attachments/assets/df1c711e-d080-4004-9c9b-81498093ce9c" />
 </p>
 
 ### Standard images
 PNG images displayed with `<img>` for quality comparison.
-<p align="center">
-<img width="500" height="650" alt="java_png_image" src="https://github.com/user-attachments/assets/8525a376-6b68-49b0-9a69-fea2b1c88e1a" />
+<p align="left">
+<img width="200" height="260" alt="java_png_image" src="https://github.com/user-attachments/assets/8525a376-6b68-49b0-9a69-fea2b1c88e1a" />
 </p>
 
 ## Getting started
@@ -70,7 +70,7 @@ PNG images displayed with `<img>` for quality comparison.
 - JavaScript
 - SVG
 - HTML Canvas
-- SweetAlert2 
+- SweetAlert2
 
 ## Disclaimer
 
