@@ -209,11 +209,14 @@ JAVA FIRST CONTENT DIV
 
 .java-info-box a {
     color: #ffffff;
-    text-decoration: underline;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .java-info-box a:hover {
     color: #ffe1b3;
+    text-decoration: underline;
 }
 
 /* COLOR VARIANTS */
